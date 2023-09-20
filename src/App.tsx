@@ -53,7 +53,7 @@ function App(): JSX.Element {
   })
 
   useEffect(() => {
-    anim.value = withRepeat(withTiming(70), -1, true)
+    anim.value = withRepeat(withTiming(70, { duration: 1000 }), -1, true)
   }, [])
 
   return (
@@ -64,7 +64,7 @@ function App(): JSX.Element {
       />
       <Animated.View style={animation}>
         <TouchableOpacity>
-          <Text style={{textAlign: 'center', fontSize: 20}}>Юля підспівуй</Text>
+          <Text className='text-[#ec1010] text-center text-[17px]'>Юля підспівуй</Text>
         </TouchableOpacity>
       </Animated.View>
     </SafeAreaView>
