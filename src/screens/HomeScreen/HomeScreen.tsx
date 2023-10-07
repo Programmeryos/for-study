@@ -9,12 +9,14 @@ type Props = RootStackScreenProps<'home'>
 const HomeScreen: React.FC<Props> = ({ navigation }) => {
   return (
     <SafeAreaView>
-      <TouchableOpacity>
-        <Text
-          onPress={() => navigation.navigate('anim-header')}
-          className="text-[22px] text-center"
-        >
+      <TouchableOpacity onPress={() => navigation.navigate('anim-header')}>
+        <Text className="mt-[20] text-[22px] text-center">
           Anim Header Screen
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('acardeon')}>
+        <Text className="mt-[20] text-[22px] text-center">
+          Acarderon Screen
         </Text>
       </TouchableOpacity>
     </SafeAreaView>

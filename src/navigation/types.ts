@@ -4,6 +4,7 @@ import { ROUTES } from './routes'
 export type RootStackParamList = {
   [ROUTES.HomeScreen]: undefined
   [ROUTES.AnimHeaderScreen]: undefined
+  [ROUTES.AcardeonScreen]: undefined
 }
 
 export type RootStackScreenProps<T extends keyof RootStackParamList> =

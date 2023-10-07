@@ -6,6 +6,7 @@ import { ROUTES } from './routes'
 
 import HomeScreen from '../screens/HomeScreen'
 import AnimHeaderScreen from '../screens/AnimHeaderScreen'
+import AcardeonScreen from '../screens/AcardeonScreen'
 
 const NavigationStack = createNativeStackNavigator()
 
@@ -23,6 +24,10 @@ const Navigator = () => (
     <NavigationStack.Screen
       name={ROUTES.AnimHeaderScreen}
       component={AnimHeaderScreen as React.FC}
+    />
+    <NavigationStack.Screen
+      name={ROUTES.AcardeonScreen}
+      component={AcardeonScreen as React.FC}
     />
   </NavigationStack.Navigator>
 )
