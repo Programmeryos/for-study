@@ -5,6 +5,7 @@ export type RootStackParamList = {
   [ROUTES.HomeScreen]: undefined
   [ROUTES.AnimHeaderScreen]: undefined
   [ROUTES.AcardeonScreen]: undefined
+  [ROUTES.FlatListScreen]: undefined
 }
 
 export type RootStackScreenProps<T extends keyof RootStackParamList> =
