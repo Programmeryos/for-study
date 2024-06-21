@@ -29,6 +29,11 @@ const HomeScreen: React.FC<Props> = ({ navigation }) => {
       <TouchableOpacity onPress={() => navigation.navigate('flat-list')}>
         <Text className="mt-[20] text-[22px] text-center">FlatList Screen</Text>
       </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate("gensture-swap")}>
+        <Text className="mt-[20] text-[22px] text-center">
+          Genstures Screen
+        </Text>
+      </TouchableOpacity>
     </SafeAreaView>
   )
 }

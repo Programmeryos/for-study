@@ -9,6 +9,7 @@ import HomeScreen from '../screens/HomeScreen'
 import AnimHeaderScreen from '../screens/AnimHeaderScreen'
 import AcardeonScreen from '../screens/AcardeonScreen'
 import FlatListScreen from '../screens/FlatListScreen'
+import GenstureSwapScreen from '../screens/GenstureSwapScreen'
 
 const { Navigator, Screen } = createStackNavigator()
 
@@ -58,6 +59,10 @@ const NavigatorComp = () => (
     <Screen
       name={ROUTES.FlatListScreen}
       component={FlatListScreen as React.FC}
+    />
+    <Screen
+      name={ROUTES.GenstureSwapScreen}
+      component={GenstureSwapScreen as React.FC}
     />
   </Navigator>
 )
